@@ -1,0 +1,61 @@
+.container {
+  margin: 0px;
+  background-color: #94d9f2;
+}
+.header {
+  margin-top: 0px;
+  background-color: #94d9f2;
+}
+.turn {
+  text-align: center;
+}
+body {
+  margin: 0;
+}
+.board {
+  margin: 2%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+}
+.cell {
+  font-size: 65px;
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-family: "Black Ops One", cursive;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: none;
+}
+.cell:first-child,
+.cell:nth-child(4),
+.cell:nth-child(7) {
+  border-left: none;
+}
+.cell:nth-child(6),
+.cell:nth-child(3),
+.cell:last-child {
+  border-right: none;
+}
+.cell:last-child,
+.cell:nth-child(8),
+.cell:nth-child(7) {
+  border-bottom: none;
+}
+
+.refresh {
+  padding: 1%;
+  padding-top: 0%;
+}

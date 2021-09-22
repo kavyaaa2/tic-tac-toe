@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagestyle.css">
+    <script src="script.js" defer></script>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" style="padding: 0px;">
+        <div class="header">
+
+            <h1 class="title text-center display-3"
+                style="font-family: 'Shadows Into Light', cursive; background-color: rgb(126, 126, 126);">
+                <img src="tic-tac-toe-hand-drawn-game.png" width="80px" height="80px">
+                TIC-TAC-TOE
+            </h1><br>
+            <div class="select text-center">
+                <p class="h5" style="font-family: 'Black Ops One', cursive;">Select a symbol for the first player: </p>
+                <form>
+                    <input type="radio" id="r1" name="turn" value="true">
+                    <font size="4"><b>X </font> &nbsp;&nbsp;
+                    <input type="radio" id="r2" name="turn" value="true">
+                    <font size="4">O </b></font> &nbsp;&nbsp;
+                    <button class="btn btn-dark btn-sm" type="button" id="b1" onclick="onSubmit()">CHOOSE</button>
+                </form>
+            </div>
+            <br>
+            <p class="turn h4" id="turn" style="font-family: 'Black Ops One', cursive;"></p>
+        </div>
+        <div class="board" id="board" width="100%" height="100%">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <div class="refresh">
+            <center>
+                <button class="btn btn-dark" id="refresh" onclick="refresh()">
+                    REFRESH
+                </button>
+        </div>
+    </div>
+</body>
+
+</html>
